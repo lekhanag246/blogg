@@ -1,0 +1,39 @@
+<%- include("./partials/head") %>
+
+<body>
+    <%- include("./partials/nav") %>
+    <main class="containerBlog">
+        <div class="sideContentBlog">
+            <ul>
+                <li><a id="sideBar-a" href="/blog">blog post submission form</a></li>
+                <li>edit blog post </li>
+                <li><a id="sideBar-a" href="/viewBlogs">view all blog post submission</a></li>
+                <li>draft</li>
+            </ul>
+        </div>
+        <div class="mainContentBlog">
+            <h2>Blog Post Submission Form</h2>
+            <form action="/blog" method="post" class="formBlog">
+                <label for="title">title :</label>
+                <br>
+                <input type="text" name="title" id="title">
+                <br>
+                <label for="snippet">snippet :</label>
+                <br>
+                <input type="text" name="snippet" id="snippet">
+                <br>
+                <label for="body">body :</label>
+                <br>
+                <textarea name="body" id="body" cols="30" rows="10" ></textarea>
+                <br>
+                <div class="formBlog-button">
+                    <button type="submit">SUBMIT</button>
+                    <button type="reset">CANCEL</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <%- include('./partials/footer') %>
+    <%- include('./partials/script') %>
+</body>
+</html>

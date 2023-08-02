@@ -1,0 +1,32 @@
+<%- include("./partials/head") %>
+
+    <body>
+        <%- include("./partials/nav") %>
+            <main class="mainViewSingleBlog">
+                <% let {_id,title,snippet,body}=foundBlog %>
+                    <h1>
+                        <%=title %>
+                    </h1>
+                    <section>
+                        <p><%= displayDate %></p>
+                        <form method="post" action="/viewBlogs/<%= _id %>?_method=DELETE">
+                            <input type="hidden" name='_method' value="DELETE">
+                            <button type="submit"><i class="fa-solid fa-trash"></i></button>
+                        </form>
+                    </section>
+                    <h3>
+                        <%=snippet %>
+                    </h3>
+                    <p>
+                        <%=body %>
+                    </p>
+            </main>
+            <%- include('./partials/footer') %>
+            <%- include('./partials/script') %>
+    </body>
+
+    </html>
+
+    <!-- over ride post method with delete -->
+    <!-- angular brackets -->
+    <!-- append method and delete to url  -->

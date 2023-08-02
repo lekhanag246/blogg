@@ -1,0 +1,28 @@
+.mainHome>h1{
+    padding-top: 1em;
+    font-size: 6rem;
+    padding-bottom: 0.25em;
+}
+.mainHome>h1>span{
+    color: green;
+}
+.mainHome>div>a{
+    border: 1px solid black;
+    border-radius: 50px 50px 50px 50px;
+    background-color: none;
+    font-size: 1.5rem;
+    padding: .5em 1em;
+    margin-right: 1em;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.mainHome>div{
+    margin-top: 1rem;
+}
+
+.mainHome>div>a:hover{
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+}

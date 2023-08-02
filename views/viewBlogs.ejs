@@ -1,0 +1,24 @@
+<%- include("./partials/head") %>
+<body>
+    <%- include("./partials/nav") %>
+    <main class="mainViewBlogs">
+        <% if(blogs.length>0){ %>
+        <% blogs.map((blog)=>{ %>
+        <a class="card" href="/viewBlogs/<%= blog._id %>">
+            <article class="blogCard">
+                <h1><%= blog.title %></h1>
+                <p>
+                    <%= blog.snippet %>
+                </p>
+            </article>
+        </a>
+        <% }) %>
+        <% }else{%>
+            <h1>No blogs to display ^_^</h1>
+        <%}%>            
+    </main>
+    <%- include('./partials/footer') %>
+    <%- include('./partials/script') %>
+</body>
+</html>
+

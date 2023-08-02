@@ -1,0 +1,19 @@
+.mainAbout>h1{
+    font-size: 7rem;
+    text-align: right;
+    padding: 30px 0 0 0;
+    text-decoration: underline solid green 5px;
+    /* border-bottom: 6px solid green; */
+    /* text-align: right; */
+    /* display: flex ; */
+    /* justify-content: right; */
+    
+}
+.mainAbout>p{
+    font-size: 4.5rem;
+    text-align: right;
+    line-height: 5rem;
+}
+.mainAbout>p>span{
+    color: green;
+}
